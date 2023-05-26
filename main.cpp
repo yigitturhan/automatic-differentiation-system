@@ -5,11 +5,12 @@
 #include "unary.h"
 
 int main() {
-	sym::Const c = 2.0;
-    sym::Var x = "x", y = "y", z= "z";
+   \\example use
+   sym::Const c = 2.0;
+   sym::Var x = "x", y = "y", z= "z";
 
-    sym::Expr e = (x*c) +  (y * z);
-    sym::Expr de = e.diff(y);
+   sym::Expr e = (x*c) +  (y * z);
+   sym::Expr de = e.diff(y);
 
    std::cout << "expression: " << e << std::endl;
    std::cout << "differention: " << de << std::endl;
